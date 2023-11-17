@@ -5,7 +5,7 @@ import "./styles.css";
 
 export default function App() {
   const [note, setNote] = useLocalStorageState("note", { defaultValue: '' });
-  const [font, setFont] = useLocalStorageState("font", { defaultValue: 0 });
+  const [font, setFont] = useLocalStorageState("font", { defaultValue: 'monospace' });
 
   function handleNoteChange(newNote) {
     setNote(newNote);
